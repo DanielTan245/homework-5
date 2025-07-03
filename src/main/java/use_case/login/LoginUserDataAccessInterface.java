@@ -15,6 +15,12 @@ public interface LoginUserDataAccessInterface {
     boolean existsByName(String username);
 
     /**
+     * Sets the username of the user.
+     * @param username the username we want to set to
+     */
+    void setCurrentUser(String username);
+
+    /**
      * Saves the user.
      * @param user the user to save
      */

@@ -87,6 +87,11 @@ public class DBUserDataAccessObject implements SignupUserDataAccessInterface,
     }
 
     @Override
+    public void setCurrentUser(String username) {
+
+    }
+
+    @Override
     public void save(User user) {
         final OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
